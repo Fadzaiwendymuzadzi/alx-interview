@@ -12,16 +12,16 @@ if len(sys.argv) != 2:
 try:
     n_q = int(sys.argv[1])
 except ValueError:
-    print('N must be a number')
+    print('N must ba a number')
     exit(1)
 
 if n_q < 4:
-    print('N must be at least 4')
+    print('N must ba at least 4')
     exit(1)
 
 
 def solve_nqueens(n):
-    '''self descriptive'''
+    ''' self descriptive '''
     if n == 0:
         return [[]]
     inner_solution = solve_nqueens(n - 1)
